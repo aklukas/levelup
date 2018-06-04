@@ -2,12 +2,242 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "",
-  "projects": {},
+  "projects": {
+    "woohoo": {
+      "root": "apps/woohoo/",
+      "sourceRoot": "apps/woohoo/src",
+      "projectType": "application",
+      "prefix": "levelup",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/woohoo",
+            "index": "apps/woohoo/src/index.html",
+            "main": "apps/woohoo/src/main.ts",
+            "polyfills": "apps/woohoo/src/polyfills.ts",
+            "tsConfig": "apps/woohoo/tsconfig.app.json",
+            "assets": [
+              "apps/woohoo/src/favicon.ico",
+              "apps/woohoo/src/assets"
+            ],
+            "styles": [
+              "apps/woohoo/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/woohoo/src/environments/environment.ts",
+                  "with": "apps/woohoo/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "woohoo:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "woohoo:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "woohoo:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "apps/woohoo/src/test.ts",
+            "polyfills": "apps/woohoo/src/polyfills.ts",
+            "tsConfig": "apps/woohoo/tsconfig.spec.json",
+            "karmaConfig": "apps/woohoo/karma.conf.js",
+            "styles": [
+              "apps/woohoo/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "apps/woohoo/src/favicon.ico",
+              "apps/woohoo/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/woohoo/tsconfig.app.json",
+              "apps/woohoo/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "woohoo-e2e": {
+      "root": "apps/woohoo-e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "apps/woohoo-e2e/protractor.conf.js",
+            "devServerTarget": "woohoo:serve"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "apps/woohoo-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "u-tuber": {
+      "root": "apps/u-tuber/",
+      "sourceRoot": "apps/u-tuber/src",
+      "projectType": "application",
+      "prefix": "levelup",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/u-tuber",
+            "index": "apps/u-tuber/src/index.html",
+            "main": "apps/u-tuber/src/main.ts",
+            "polyfills": "apps/u-tuber/src/polyfills.ts",
+            "tsConfig": "apps/u-tuber/tsconfig.app.json",
+            "assets": [
+              "apps/u-tuber/src/favicon.ico",
+              "apps/u-tuber/src/assets"
+            ],
+            "styles": [
+              "apps/u-tuber/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/u-tuber/src/environments/environment.ts",
+                  "with": "apps/u-tuber/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "u-tuber:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "u-tuber:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "u-tuber:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "apps/u-tuber/src/test.ts",
+            "polyfills": "apps/u-tuber/src/polyfills.ts",
+            "tsConfig": "apps/u-tuber/tsconfig.spec.json",
+            "karmaConfig": "apps/u-tuber/karma.conf.js",
+            "styles": [
+              "apps/u-tuber/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "apps/u-tuber/src/favicon.ico",
+              "apps/u-tuber/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/u-tuber/tsconfig.app.json",
+              "apps/u-tuber/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "u-tuber-e2e": {
+      "root": "apps/u-tuber-e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "apps/u-tuber-e2e/protractor.conf.js",
+            "devServerTarget": "u-tuber:serve"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "apps/u-tuber-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "warnings": {
       "typescriptMismatch": false,
       "versionMismatch": false
     },
     "defaultCollection": "@nrwl/schematics"
-  }
+  },
+  "defaultProject": "woohoo"
 }

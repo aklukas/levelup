@@ -1,5 +1,17 @@
 {
   "npmScope": "levelup",
   "projects": {
+    "woohoo": {
+      "tags": []
+    },
+    "woohoo-e2e": {
+      "tags": []
+    },
+    "u-tuber": {
+      "tags": []
+    },
+    "u-tuber-e2e": {
+      "tags": []
+    }
   }
 }
