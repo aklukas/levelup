@@ -1,0 +1,31 @@
+.grid-container {
+  margin: 20px;
+}
+
+.mat-h1 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #2196F3;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.more-button[_ngcontent-c2] {
+  color: #FF6E40;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
