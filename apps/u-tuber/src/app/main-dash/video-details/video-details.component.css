@@ -1,0 +1,25 @@
+.dashboard-card-one {
+  font-family: 'Ubuntu', sans-serif;
+  color: #2196F3;
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.more-button[_ngcontent-c2] {
+  color: #FF6E40;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+  height: auto;
+}

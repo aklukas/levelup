@@ -1,0 +1,15 @@
+
+<div class="feature-grid">
+  <div class="feature-list">
+    <levelup-dev-list [developers]="developers"
+                      (selected)="selectedDev($event)"
+                      (remove)="removeDev($event)">
+    </levelup-dev-list>
+  </div>
+  <div class="feature-detail">
+    <levelup-dev-detail [developer]="developer"
+                        (canceled)="cancel($event)"
+                        (saved)="saveDev($event)">
+    </levelup-dev-detail>
+  </div>
+</div>

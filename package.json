@@ -8,6 +8,8 @@
     "deploy:woohoo": "ng build && cp ./dist/apps/woohoo/index.html ./dist/apps/woohoo/200.html && surge ./dist/apps/woohoo https://woohoo.surge.sh",
     "start:u-tuber": "ng serve --project=u-tuber --port 4201",
     "deploy:u-tuber": "ng build --project=u-tuber && cp ./dist/apps/u-tuber/index.html ./dist/apps/u-tuber/200.html && surge ./dist/apps/u-tuber https://u-tuber.surge.sh",
+    "start:next-level": "ng serve --project=next-level --port 4202",
+    "deploy:next-level": "ng build --project=next-level && cp ./dist/apps/next-level/index.html ./dist/apps/next-level/200.html && surge ./dist/apps/next-level https://next-level.surge.sh",
     "build": "ng build",
     "test": "ng test",
     "lint": "./node_modules/.bin/nx lint && ng lint",

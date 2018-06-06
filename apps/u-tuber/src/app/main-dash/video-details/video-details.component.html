@@ -1,0 +1,21 @@
+<mat-card class="dashboard-card-one">
+  <mat-card-header>
+    <mat-card-title>
+      <h1>Details</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <form (submit)="save.emit()">
+    <mat-card-content>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Title" [(ngModel)]="currentItem.title" name="title">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Description" [(ngModel)]="currentItem.description" name="description"></textarea>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Save</button>
+      <button mat-raised-button color="accent" type="button" (click)="cancel.emit()">Cancel</button>
+    </mat-card-actions>
+  </form>
+</mat-card>

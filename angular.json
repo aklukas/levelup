@@ -230,6 +230,234 @@
           }
         }
       }
+    },
+    "leveled-up": {
+      "root": "apps/leveled-up/",
+      "sourceRoot": "apps/leveled-up/src",
+      "projectType": "application",
+      "prefix": "levelup",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/leveled-up",
+            "index": "apps/leveled-up/src/index.html",
+            "main": "apps/leveled-up/src/main.ts",
+            "polyfills": "apps/leveled-up/src/polyfills.ts",
+            "tsConfig": "apps/leveled-up/tsconfig.app.json",
+            "assets": [
+              "apps/leveled-up/src/favicon.ico",
+              "apps/leveled-up/src/assets"
+            ],
+            "styles": [
+              "apps/leveled-up/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/leveled-up/src/environments/environment.ts",
+                  "with": "apps/leveled-up/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "leveled-up:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "leveled-up:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "leveled-up:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "apps/leveled-up/src/test.ts",
+            "polyfills": "apps/leveled-up/src/polyfills.ts",
+            "tsConfig": "apps/leveled-up/tsconfig.spec.json",
+            "karmaConfig": "apps/leveled-up/karma.conf.js",
+            "styles": [
+              "apps/leveled-up/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "apps/leveled-up/src/favicon.ico",
+              "apps/leveled-up/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/leveled-up/tsconfig.app.json",
+              "apps/leveled-up/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "leveled-up-e2e": {
+      "root": "apps/leveled-up-e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "apps/leveled-up-e2e/protractor.conf.js",
+            "devServerTarget": "leveled-up:serve"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "apps/leveled-up-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "next-level": {
+      "root": "apps/next-level/",
+      "sourceRoot": "apps/next-level/src",
+      "projectType": "application",
+      "prefix": "levelup",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/next-level",
+            "index": "apps/next-level/src/index.html",
+            "main": "apps/next-level/src/main.ts",
+            "polyfills": "apps/next-level/src/polyfills.ts",
+            "tsConfig": "apps/next-level/tsconfig.app.json",
+            "assets": [
+              "apps/next-level/src/favicon.ico",
+              "apps/next-level/src/assets"
+            ],
+            "styles": [
+              "apps/next-level/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/next-level/src/environments/environment.ts",
+                  "with": "apps/next-level/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "next-level:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "next-level:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "next-level:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "apps/next-level/src/test.ts",
+            "polyfills": "apps/next-level/src/polyfills.ts",
+            "tsConfig": "apps/next-level/tsconfig.spec.json",
+            "karmaConfig": "apps/next-level/karma.conf.js",
+            "styles": [
+              "apps/next-level/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "apps/next-level/src/favicon.ico",
+              "apps/next-level/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/next-level/tsconfig.app.json",
+              "apps/next-level/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "next-level-e2e": {
+      "root": "apps/next-level-e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "apps/next-level-e2e/protractor.conf.js",
+            "devServerTarget": "next-level:serve"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "apps/next-level-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

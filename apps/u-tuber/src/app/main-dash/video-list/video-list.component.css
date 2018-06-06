@@ -1,0 +1,28 @@
+.dashboard-card-one {
+  font-family: 'Ubuntu', sans-serif;
+  color: #2196F3;
+  grid-column: auto;
+  grid-row: auto;
+  margin-bottom: 10px;
+}
+
+mat-card:hover {
+  cursor: pointer;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.more-button[_ngcontent-c2] {
+  color: #FF6E40;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+
+

@@ -8,9 +8,14 @@ import { NxModule } from '@nrwl/nx';
 import { AppMaterialModule } from '@levelup/app-material.module';
 import { MainDashComponent } from './main-dash/main-dash.component';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+import { YoutubeService } from './shared/youtube.service';
+import { VideoListComponent } from './main-dash/video-list/video-list.component';
+import { VideoDetailsComponent } from './main-dash/video-details/video-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, MainDashComponent],
+  declarations: [AppComponent, MainDashComponent, VideoListComponent, VideoDetailsComponent],
   imports: [
     BrowserModule,
     AppMaterialModule,
@@ -19,9 +24,11 @@ import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButt
     MatCardModule,
     MatMenuModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [YoutubeService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

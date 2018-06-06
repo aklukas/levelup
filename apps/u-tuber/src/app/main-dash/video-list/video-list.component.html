@@ -1,0 +1,16 @@
+<mat-card class="dashboard-card-one" *ngFor="let item of items" (click)="select.emit(item.snippet)">
+  <mat-card-header>
+    <mat-card-title>
+      <h1>{{item.snippet.title}}</h1>
+      <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" xPosition="before">
+        <button mat-menu-item (click)="remove.emit(item.snippet)">Remove</button>
+      </mat-menu>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <img [src]="item.snippet.thumbnails.high.url"/>
+  </mat-card-content>
+</mat-card>
