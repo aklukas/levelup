@@ -10,6 +10,8 @@
     "deploy:u-tuber": "ng build --project=u-tuber && cp ./dist/apps/u-tuber/index.html ./dist/apps/u-tuber/200.html && surge ./dist/apps/u-tuber https://u-tuber.surge.sh",
     "start:next-level": "ng serve --project=next-level --port 4202",
     "deploy:next-level": "ng build --project=next-level && cp ./dist/apps/next-level/index.html ./dist/apps/next-level/200.html && surge ./dist/apps/next-level https://next-level.surge.sh",
+    "start:post-it": "ng serve --project=post-it --port 4203",
+    "deploy:post-it": "ng build --project=post-it && cp ./dist/apps/post-it/index.html ./dist/apps/post-it/200.html && surge ./dist/apps/post-it https://post-it.surge.sh",
     "build": "ng build",
     "test": "ng test",
     "lint": "./node_modules/.bin/nx lint && ng lint",

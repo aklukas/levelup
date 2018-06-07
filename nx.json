@@ -24,6 +24,18 @@
     },
     "next-level-e2e": {
       "tags": []
+    },
+    "post-it": {
+      "tags": []
+    },
+    "post-it-e2e": {
+      "tags": []
+    },
+    "wookie": {
+      "tags": []
+    },
+    "wookie-e2e": {
+      "tags": []
     }
   }
 }

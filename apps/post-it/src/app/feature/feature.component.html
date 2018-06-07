@@ -1,0 +1,15 @@
+<div class="feature-grid">
+  <div class="feature-list">
+    <levelup-feature-list [posts]="posts"
+                          (selected)="selectedPost($event)"
+                          (remove)="removePost($event)">
+    </levelup-feature-list>
+  </div>
+  <div class="feature-detail">
+    <levelup-feature-detail [post]="post"
+                            (saved)="savePost($event)"
+                            (canceled)="clear($event)" >
+    </levelup-feature-detail>
+    <levelup-comment></levelup-comment>
+  </div>
+</div>

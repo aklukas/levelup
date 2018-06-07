@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h2>Comment</h2>
+    </mat-card-title>
+  </mat-card-header>
+  <form (submit)="saved.emit(newComment)">
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Name" type="text" name="name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Comment" type="text" name="comment">
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button type="submit" color="primary">Save</button>
+      <button  mat-raised-button type="button" color="accent">Cancel</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
+
+

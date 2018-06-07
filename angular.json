@@ -458,6 +458,234 @@
           }
         }
       }
+    },
+    "post-it": {
+      "root": "apps/post-it/",
+      "sourceRoot": "apps/post-it/src",
+      "projectType": "application",
+      "prefix": "levelup",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/post-it",
+            "index": "apps/post-it/src/index.html",
+            "main": "apps/post-it/src/main.ts",
+            "polyfills": "apps/post-it/src/polyfills.ts",
+            "tsConfig": "apps/post-it/tsconfig.app.json",
+            "assets": [
+              "apps/post-it/src/favicon.ico",
+              "apps/post-it/src/assets"
+            ],
+            "styles": [
+              "apps/post-it/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/post-it/src/environments/environment.ts",
+                  "with": "apps/post-it/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "post-it:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "post-it:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "post-it:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "apps/post-it/src/test.ts",
+            "polyfills": "apps/post-it/src/polyfills.ts",
+            "tsConfig": "apps/post-it/tsconfig.spec.json",
+            "karmaConfig": "apps/post-it/karma.conf.js",
+            "styles": [
+              "apps/post-it/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "apps/post-it/src/favicon.ico",
+              "apps/post-it/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/post-it/tsconfig.app.json",
+              "apps/post-it/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "post-it-e2e": {
+      "root": "apps/post-it-e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "apps/post-it-e2e/protractor.conf.js",
+            "devServerTarget": "post-it:serve"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "apps/post-it-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "wookie": {
+      "root": "apps/wookie/",
+      "sourceRoot": "apps/wookie/src",
+      "projectType": "application",
+      "prefix": "levelup",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/wookie",
+            "index": "apps/wookie/src/index.html",
+            "main": "apps/wookie/src/main.ts",
+            "polyfills": "apps/wookie/src/polyfills.ts",
+            "tsConfig": "apps/wookie/tsconfig.app.json",
+            "assets": [
+              "apps/wookie/src/favicon.ico",
+              "apps/wookie/src/assets"
+            ],
+            "styles": [
+              "apps/wookie/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/wookie/src/environments/environment.ts",
+                  "with": "apps/wookie/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "wookie:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "wookie:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "wookie:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "apps/wookie/src/test.ts",
+            "polyfills": "apps/wookie/src/polyfills.ts",
+            "tsConfig": "apps/wookie/tsconfig.spec.json",
+            "karmaConfig": "apps/wookie/karma.conf.js",
+            "styles": [
+              "apps/wookie/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "apps/wookie/src/favicon.ico",
+              "apps/wookie/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/wookie/tsconfig.app.json",
+              "apps/wookie/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "wookie-e2e": {
+      "root": "apps/wookie-e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "apps/wookie-e2e/protractor.conf.js",
+            "devServerTarget": "wookie:serve"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "apps/wookie-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
