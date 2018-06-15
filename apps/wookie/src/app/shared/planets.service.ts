@@ -11,6 +11,6 @@ export class PlanetsService {
   constructor(private http: HttpClient) { }
 
   getAllPlanets() {
-    return this.http.get<Planet[]>(api).pipe(map(res => res))
+    return this.http.get<any>(api).pipe(map(res => res.results))
   }
 }

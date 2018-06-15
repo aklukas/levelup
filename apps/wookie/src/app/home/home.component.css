@@ -13,13 +13,13 @@ mat-card-content p {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
 
 .home-card {
-  grid-column: 2/3;
+  grid-column: 3/6;
   grid-row: 2;
   margin-bottom: 25%;
 }

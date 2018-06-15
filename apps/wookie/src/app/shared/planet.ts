@@ -6,8 +6,8 @@ export interface Planet {
   gravity: string;
   terrain: string;
   surface_water: string;
-  residents: Array;
-  films: Array;
+  residents: Array<string>;
+  films: Array<string>;
   url: string;
   created: string;
   edited: string;
