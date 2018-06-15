@@ -11,13 +11,15 @@ import { AppMaterialModule } from '@levelup/app-material.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PlanetsService } from './shared/planets.service';
+import { PlanetDetailComponent } from './planets/planet-detail/planet-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PlanetsComponent,
-    PlanetsListComponent
+    PlanetsListComponent,
+    PlanetDetailComponent
   ],
   imports: [
     BrowserModule,

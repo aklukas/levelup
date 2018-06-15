@@ -1,3 +1,12 @@
-<p>
-  planets works!
-</p>
+<div class="feature-grid">
+  <div class="feature-list">
+    <h1>Planets</h1>
+    <levelup-planets-list [planets]="planets"
+                          (selected)="selectedPlanet($event)"
+    >
+    </levelup-planets-list>
+  </div>
+  <div class="feature-detail">
+    <levelup-planet-detail [planet]="planet" *ngIf="planet"></levelup-planet-detail>
+  </div>
+</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PlanetsService } from '../shared/planets.service';
+import { Planet } from '../shared/planet';
 
 @Component({
   selector: 'levelup-planets',
@@ -6,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./planets.component.css']
 })
 export class PlanetsComponent implements OnInit {
+  planets: Planet[];
+  planet: Planet;
 
-  constructor() { }
+  constructor( private planetsService: PlanetsService ) { }
 
   ngOnInit() {
+    this.getPlanets();
+  }
+
+  getPlanets() {
+    this.planetsService.getAllPlanets().subscribe(data => this.planets = data)
+  }
+
+  selectedPlanet(planet: Planet){
+    this.planet = planet;
+    console.log('SELECTED')
   }
 
 }

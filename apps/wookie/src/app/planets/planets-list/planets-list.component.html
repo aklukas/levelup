@@ -1,3 +1,7 @@
-<p>
-  planets-list works!
-</p>
+<div class="list-grid">
+  <mat-card *ngFor="let planet of planets" (click)="selected.emit(planet)">
+    <mat-card-header>
+      <mat-card-title><h2>{{planet.name}}</h2></mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>
