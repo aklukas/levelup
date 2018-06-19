@@ -3,7 +3,6 @@ import { HttpParams, HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 const URL = 'https://www.googleapis.com/books/v1';
-const apiKey = 'AIzaSyCFUBoUGTUf0J7vA5qxtrGekTtOtSV5HGg';
 
 @Injectable()
 export class BookService {
