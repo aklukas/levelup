@@ -8,7 +8,7 @@ import {
   MatListModule,
   MatToolbarModule,
   MatTabsModule,
-  MatDialogModule, MatSidenavModule
+  MatDialogModule, MatSidenavModule, MatExpansionModule
 } from '@angular/material';
 import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -26,7 +26,8 @@ import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-b
     MatDialogModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatExpansionModule
   ],
   exports: [
     MatButtonModule,
@@ -40,7 +41,8 @@ import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-b
     MatDialogModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatExpansionModule
   ]
 })
 export class AppMaterialModule {

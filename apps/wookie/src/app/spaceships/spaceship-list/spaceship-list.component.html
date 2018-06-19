@@ -1,0 +1,7 @@
+<div class="list-grid">
+  <mat-card *ngFor="let spaceship of spaceships" (click)="selected.emit(spaceship)">
+    <mat-card-header>
+      <mat-card-title><h2>{{spaceship.name}}</h2></mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>

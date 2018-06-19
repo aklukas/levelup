@@ -36,6 +36,18 @@
     },
     "wookie-e2e": {
       "tags": []
+    },
+    "football-api": {
+      "tags": []
+    },
+    "football-api-e2e": {
+      "tags": []
+    },
+    "boogle": {
+      "tags": []
+    },
+    "boogle-e2e": {
+      "tags": []
     }
   }
 }

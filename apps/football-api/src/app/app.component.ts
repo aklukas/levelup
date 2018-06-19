@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Google Books API';
+  title = 'levelup';
   links = [
     { path: '/home', icon: 'home', label: 'Home' },
-    { path: '/planets', icon: 'loyalty', label: 'Planets' },
-    { path: '/spaceships', icon: 'loyalty', label: 'Spaceships' },
+    { path: '/books', icon: 'loyalty', label: 'Books' }
   ];
 }

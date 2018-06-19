@@ -1,0 +1,15 @@
+mat-card:hover {
+  cursor: pointer;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+img {
+  height: auto;
+  width: auto;
+}

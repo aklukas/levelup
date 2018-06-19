@@ -1,0 +1,10 @@
+<div class="feature-grid">
+  <div class="feature-list">
+    <h1>Spaceships</h1>
+    <levelup-spaceship-list [spaceships]="spaceships" (selected)="selectedSpaceship($event)">
+    </levelup-spaceship-list>
+  </div>
+  <div class="feature-detail">
+    <levelup-spaceship-detail [spaceship]="spaceship" *ngIf="spaceship"></levelup-spaceship-detail>
+  </div>
+</div>

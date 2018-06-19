@@ -12,6 +12,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PlanetsService } from './shared/planets.service';
 import { PlanetDetailComponent } from './planets/planet-detail/planet-detail.component';
+import { SpaceshipsComponent } from './spaceships/spaceships.component';
+import { SpaceshipListComponent } from './spaceships/spaceship-list/spaceship-list.component';
+import { SpaceshipDetailComponent } from './spaceships/spaceship-detail/spaceship-detail.component';
+import { SpaceshipService } from './shared/spaceship.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,10 @@ import { PlanetDetailComponent } from './planets/planet-detail/planet-detail.com
     HomeComponent,
     PlanetsComponent,
     PlanetsListComponent,
-    PlanetDetailComponent
+    PlanetDetailComponent,
+    SpaceshipsComponent,
+    SpaceshipListComponent,
+    SpaceshipDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,7 @@ import { PlanetDetailComponent } from './planets/planet-detail/planet-detail.com
     FormsModule,
     HttpClientModule
   ],
-  providers: [PlanetsService],
+  providers: [PlanetsService, SpaceshipService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

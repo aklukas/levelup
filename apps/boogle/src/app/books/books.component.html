@@ -1,0 +1,11 @@
+<div class="feature-grid">
+  <div class="feature-list">
+    <levelup-book-list [book]="books">
+    </levelup-book-list>
+  </div>
+  <div class="feature-detail">
+    <levelup-book-search [book]="books"
+                         (searching)="search($event)" >
+    </levelup-book-search>
+  </div>
+</div>
