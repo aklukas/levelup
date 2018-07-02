@@ -17,7 +17,7 @@ export class BooksComponent implements OnInit {
   }
 
   // getBooks() {
-  //   this.bookService.getAllBooks().subscribe(data => this.books = data.map(item => item.volumeInfo));
+  //   this.bookService.getAllBooks().subscribe(data => this.competitions = data.map(item => item.volumeInfo));
   // }
 
   search(input){

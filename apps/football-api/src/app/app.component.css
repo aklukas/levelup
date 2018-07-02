@@ -4,8 +4,9 @@
   flex: 1;
 }
 
-mat-toolbar {
+ .title {
   z-index: 1;
+   background-color: lightslategray;
 }
 
 mat-sidenav {
@@ -20,13 +21,17 @@ span:hover {
   cursor: pointer;
 }
 
+h1 {
+  color: white;
+}
+
 a.ventur {
   color: white;
   text-decoration: none;
 }
 
 .mat-sidenav-container {
-  background: whitesmoke;
+  background: lightslategray;
   flex: 1;
 }
 

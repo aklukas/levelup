@@ -1,6 +1,13 @@
 mat-card {
   padding-top: 0;
   padding-bottom: 35px;
+  background-color: darkgray;
+  height: 300px;
+}
+
+mat-card-header {
+  border-bottom: 3px solid #FF6E40;
+  width: 100%;
 }
 
 mat-card-content {

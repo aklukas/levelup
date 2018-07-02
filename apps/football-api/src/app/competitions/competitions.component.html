@@ -1,0 +1,11 @@
+<div class="feature-grid">
+  <div class="feature-list">
+    <h1>Competitions</h1>
+    <levelup-competition-list [competitions]="competitions" (selected)="selectedCompetition($event)">
+    </levelup-competition-list>
+  </div>
+  <div class="feature-detail">
+    <levelup-competition-detail [match]="match"></levelup-competition-detail>
+  </div>
+</div>
+

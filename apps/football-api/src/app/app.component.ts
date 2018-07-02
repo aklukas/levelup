@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'levelup';
   links = [
     { path: '/home', icon: 'home', label: 'Home' },
-    { path: '/books', icon: 'loyalty', label: 'Books' }
+    { path: '/competitions', icon: 'loyalty', label: 'Books' }
   ];
 }

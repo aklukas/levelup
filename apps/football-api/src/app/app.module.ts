@@ -4,12 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NxModule } from '@nrwl/nx';
 import { HomeComponent } from './home/home.component';
-import { BooksComponent } from './books/books.component';
-import { BookListComponent } from './books/book-list/book-list.component';
-import { BookDetailComponent } from './books/book-detail/book-detail.component';
+import { CompetitionsComponent } from './competitions/competitions.component';
+import { CompetitionListComponent } from './competitions/competition-list/competition-list.component';
+import { CompetitionDetailComponent } from './competitions/competition-detail/competition-detail.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppMaterialModule } from '@levelup/app-material.module';
-import { BooksService } from './shared/books.service';
+import { CompetitionsService } from './shared/competitions.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -17,9 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HomeComponent,
-    BooksComponent,
-    BookListComponent,
-    BookDetailComponent
+    CompetitionsComponent,
+    CompetitionListComponent,
+    CompetitionDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [BooksService],
+  providers: [CompetitionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

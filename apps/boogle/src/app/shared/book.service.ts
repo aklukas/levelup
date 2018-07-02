@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpParams, HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
-const URL = 'https://www.googleapis.com/books/v1';
+const URL = 'https://www.googleapis.com/competitions/v1';
 
 @Injectable()
 export class BookService {

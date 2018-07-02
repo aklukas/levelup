@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Google Books API';
   links = [
-    { path: '/books', icon: 'loyalty', label: 'Books' }
+    { path: '/competitions', icon: 'loyalty', label: 'Books' }
   ];
 }
