@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  margin: 0 150px 0 150px;
+  background-image: -webkit-linear-gradient(150deg, hsl(0, 0%, 25%) 35%, hsl(0, 0%, 18%) 35%);
+}
+
+@media (max-width: 599px) {
+  body {
+    height: 100%;
+    margin: 0;
+  }
+}

@@ -1,0 +1,52 @@
+.flameLit {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  box-shadow: 12px -10px 31px 6px #404040;
+  width: 7em;
+  height: 7em;
+  border: none;
+  -webkit-border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  border-radius: 100% 0 60% 40% / 60% 0 100% 40%;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: linear-gradient(to top right, #FFD000, lightgoldenrodyellow);
+  -webkit-transform: rotateZ(-45deg)   ;
+  transform: rotateZ(-45deg)   ;
+}
+
+.flameLit:hover {
+  cursor: pointer;
+}
+
+.flameOut {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 7em;
+  height: 7em;
+  border: 2px solid rgba(0,0,0,1);
+  -webkit-border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transform: rotateZ(-45deg)   ;
+  transform: rotateZ(-45deg)   ;
+}
+
+.flameOut:hover {
+  cursor: pointer;
+}
+
+.candleBody {
+  background: linear-gradient(to top, #404040, #FFC1CC	);
+  width: 7em;
+  height: 12em;
+  margin-top: 10px;
+  border-radius: 15px 15px 5px 5px;
+  box-shadow: 0px 10px 8px -1px #404040;
+}

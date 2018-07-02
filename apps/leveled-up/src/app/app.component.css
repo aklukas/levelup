@@ -1,0 +1,42 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: .75fr 1fr auto;
+}
+
+.header {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: .1fr;
+  grid-template-rows: auto;
+  grid-row: 1;
+  grid-column: 1/2;
+}
+
+h1 {
+  color: lightgoldenrodyellow;
+  font-family: 'Leckerli One', cursive;
+  grid-row: 1;
+}
+
+img {
+  margin-top: 20px;
+  grid-row: 1;
+}
+
+.content {
+  grid-column: 2/3;
+  grid-row: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 599px) {
+  .content {
+    grid-column: 2/3;
+    grid-row: 2;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+

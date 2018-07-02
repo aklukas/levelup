@@ -1,0 +1,5 @@
+<div *ngFor="let post of posts | async">
+  <div [ngClass]="{'flameLit' : post.isLit}" class="flameOut" (click)="setValue()"></div>
+  <div class="candleBody"></div>
+</div>
+
