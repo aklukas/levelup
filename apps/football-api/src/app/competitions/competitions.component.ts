@@ -16,7 +16,7 @@ export class CompetitionsComponent implements OnInit {
   }
 
   getCompetition() {
-    this.competitionsService.getCompetitions().subscribe(data => this.competitions = data)
+    this.competitionsService.getCompetitions().subscribe(data => this.competitions = data.competitions);
   }
 
   selectedCompetition(match: any){

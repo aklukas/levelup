@@ -2,15 +2,13 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  height: 100%;
 }
 
  .title {
   z-index: 1;
    background-color: lightslategray;
-}
-
-mat-sidenav {
-  width: 200px;
+   border-bottom: 3px solid #FF6E40;
 }
 
 span {
@@ -23,22 +21,4 @@ span:hover {
 
 h1 {
   color: white;
-}
-
-a.ventur {
-  color: white;
-  text-decoration: none;
-}
-
-.mat-sidenav-container {
-  background: lightslategray;
-  flex: 1;
-}
-
-.nav-link {
-  color: rgba(0,0,0,.54);
-  display: flex;
-  align-items:center;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
