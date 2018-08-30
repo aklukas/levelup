@@ -48,6 +48,12 @@
     },
     "boogle-e2e": {
       "tags": []
+    },
+    "handyman": {
+      "tags": []
+    },
+    "handyman-e2e": {
+      "tags": []
     }
   }
 }
