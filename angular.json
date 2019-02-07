@@ -935,7 +935,7 @@
               "apps/handyman/src/assets"
             ],
             "styles": [
-              "apps/handyman/src/styles.css"
+              "apps/handyman/src/styles.scss"
             ],
             "scripts": []
           },
@@ -984,7 +984,7 @@
             "tsConfig": "apps/handyman/tsconfig.spec.json",
             "karmaConfig": "apps/handyman/karma.conf.js",
             "styles": [
-              "apps/handyman/src/styles.css"
+              "apps/handyman/src/styles.scss"
             ],
             "scripts": [],
             "assets": [
