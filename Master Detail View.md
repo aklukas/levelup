@@ -22,12 +22,12 @@ app/
 	feature/
 		feature.component.ts
 		…
-	feature-list/
-		feature-list.component.ts
-		…
-	feature-detail/
-		feature-detail.component.ts
-		…
+		feature-list/
+			feature-list.component.ts
+			…
+		feature-detail/
+			feature-detail.component.ts
+			…
 	shared/
 		index.ts
 		feature.service.ts
